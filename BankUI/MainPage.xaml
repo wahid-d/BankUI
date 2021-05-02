@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BankUI.MainPage"
+             BackgroundColor="{StaticResource page-bg}">
+
+    <Grid RowDefinitions="100, *" RowSpacing="0">
+
+        <StackLayout Orientation="Horizontal"
+                     Grid.Row="0" Spacing="20"
+                     Padding="30">
+            <Frame Margin="0" Padding="0"
+                   BackgroundColor="{StaticResource secondary}"
+                   CornerRadius="15" HasShadow="False">
+                <Label FontFamily="fas" TextColor="{StaticResource text-light}"
+                       Text="&#xf009;" FontSize="20" Padding="10"/>
+            </Frame>
+
+            <StackLayout Spacing="0">
+                <Label Text="Hello, Adam" TextColor="{StaticResource text-medium}"
+                       FontSize="14"/>
+                <Label Text="Welcome Back!" TextColor="{StaticResource text-light}"
+                       FontSize="20" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <Frame Margin="0" Padding="0" HasShadow="False" BackgroundColor="{StaticResource surface-dark}"
+                   CornerRadius="10" HorizontalOptions="EndAndExpand">
+                <Grid ColumnDefinitions="*, *">
+                    <Frame Grid.Column="1" Margin="0, 3,3,3" Padding="0" BackgroundColor="{StaticResource page-bg}"
+                           CornerRadius="7" HasShadow="False">
+                        <Label FontFamily="fas" TextColor="{StaticResource text-light}"
+                               FontSize="15" Text="&#xf186;" Padding="7" />
+                    </Frame>
+                    <Frame Grid.Column="0" Margin="3,3,0,3" Padding="0" BackgroundColor="Transparent"
+                           CornerRadius="7" HasShadow="False">
+                        <Label FontFamily="fas" TextColor="{StaticResource text-light}"
+                               FontSize="15" Text="&#xf185;" Padding="7"/>
+                    </Frame>
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+
+        <ScrollView Grid.Row="1">
+            <Grid RowDefinitions="auto, *">
+                <Frame HasShadow="False" CornerRadius="30" Margin="30" Padding="15"
+                       Scale=".80" Opacity=".6" TranslationY="30">
+                    <StackLayout HorizontalOptions="Center" Opacity="0">
+                        <Label Text="Total Balance" HorizontalTextAlignment="Center"
+                               FontSize="18" TextColor="{StaticResource text-medium}"/>
+                        <Label Text="$ 3,567.12" FontAttributes="Bold" CharacterSpacing=".01"
+                               FontSize="38" TextColor="{StaticResource text-dark}"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False" CornerRadius="30" Margin="30" Padding="15"
+                       Scale=".90" Opacity=".5" TranslationY="15">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="Total Balance" HorizontalTextAlignment="Center"
+                               FontSize="18" TextColor="{StaticResource text-medium}"/>
+                        <Label Text="$ 3,567.12" FontAttributes="Bold" CharacterSpacing=".01"
+                               FontSize="38" TextColor="{StaticResource text-dark}"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False" CornerRadius="30" Margin="30" Padding="15">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="Total Balance" HorizontalTextAlignment="Center"
+                               FontSize="18" TextColor="{StaticResource text-medium}"/>
+                        <Label Text="$ 3,567.12" FontAttributes="Bold" CharacterSpacing=".01"
+                               FontSize="38" TextColor="{StaticResource text-dark}"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </ScrollView>
+
+        <BoxView BackgroundColor= "Green"
+                 HeightRequest="50"
+                 VerticalOptions="End"
+                 Grid.Row="1"/>
+    </Grid>
+</ContentPage>

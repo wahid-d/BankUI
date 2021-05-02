@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BankUI.App">
+    <Application.Resources>
+        <Color x:Key="page-bg">#101217</Color>
+        <Color x:Key="surface-dark">#272B33</Color>
+        <Color x:Key="surface-light">#C5EBEC</Color>
+        <Color x:Key="secondary">#63A4A7</Color>
+        <Color x:Key="text-light">#E7E7E8</Color>
+        <Color x:Key="text-medium">#7D8390</Color>
+        <Color x:Key="text-dark">#47797B</Color>
+    </Application.Resources>
+</Application>
